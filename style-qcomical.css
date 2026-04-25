@@ -1,0 +1,498 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 1em;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.qcomical-logo {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+}
+
+.eu-funding {
+  margin-top: 3em;
+  padding-top: 1em;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  font-size: 90%;
+}
+
+.eu-funding img {
+  margin-top: 0.5em;
+  width: 160px;
+  height: auto;
+}
+
+.hosted-by {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: #444;
+}
+
+.hosted-by p {
+  margin-bottom: 0.5em;
+}
+
+.hosted-by img {
+  max-width: 160px;   /* nunca más grande que el logo de la UE */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  color: #0073e6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  font-size: 14px;
+}
+.schedule tr.row-30 td {
+  height: 20px;
+}
+
+.schedule tr.row-60 td {
+	height: 40px;
+}
+
+.schedule tr.row-90 td {
+	height: 60px;
+}
+
+.schedule tr.row-120 td {
+  height: 80px;
+}
+
+.schedule td,
+.schedule th {
+  vertical-align: middle;
+  text-align: center;
+  padding: 0.4em;
+  border: 1px solid #ccc;
+}
+
+.schedule td.empty {
+  border: none !important;
+  background: transparent;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #555;
+}
+
+.schedule td:first-child,
+.schedule th:first-child {
+  white-space: nowrap;
+  min-width: 90px;
+  font-size: 90%;
+}
+
+.schedule th:not(:first-child),
+.schedule td:not(:first-child) {
+  width: 20%; /* cinco columnas iguales */
+}
+
+.lunch {
+  background-color: #e6daf0;
+  font-style: italic;
+}
+
+.coffee {
+  background-color: #d9ead3;
+  font-style: italic;
+}
+
+.qc {
+  background-color: #b3c7f9;
+}
+
+.zx {
+  background-color: #a7ddb4;
+}
+
+.quantum-languages {
+  background-color: #ffe0b2;
+}
+
+.industrial {
+  background-color: #b2ebff;
+  font-style: italic;
+}
+
+.realisability {
+  background-color: #ffcccb;
+}
+
+.quantitative {
+  background-color: #e0f0ff;
+}
+
+.optics {
+  background-color: #d0d9ff;
+}
+
+.tbc {
+  background-color: #fafafa;
+  color: #777;
+  font-style: italic;
+}
+
+.concurrency {
+  background-color: #fff9c4;
+}
+
+.lecturers li {
+  margin-bottom: 0.4em;
+}
+
+.organisers li {
+	margin-bottom: 0.4em;
+}
+
+.tagline {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #222;
+  margin-top: -1em;
+  margin-bottom: 0.5em;
+}
+
+.prereg-box {
+  border: 2px solid #e74c3c;   /* rojo suave */
+  background-color: #fff5f5;   /* fondo tenue */
+  padding: 15px;
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.prereg-box strong {
+  color: #e74c3c;
+}
+
+.prereg-box a {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 18px;
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.prereg-box a:hover {
+  background-color: #c0392b;
+}
+
+.prereg-box p:last-child {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.venue-box, .visa-box {
+  background-color: #f7f9ff;
+  border-left: 4px solid #2c3e50;
+  padding: 12px 15px;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+/* Sponsors */
+#sponsors { margin-top: 2.2em; }
+
+.sponsors {
+  background: #fff;
+  border: 1px solid #ddd;   /* borde externo limpio */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sponsors .tier {
+  padding: 14px 16px;
+  /* por defecto, SIN línea punteada */
+  border-top: none;
+}
+
+/* Línea punteada SOLO entre categorías visibles */
+.sponsors .tier:not(:has(.logos:empty)) + .tier:not(:has(.logos:empty)) {
+  border-top: 2px dashed #d7d7d7;
+}
+
+.sponsors h3 {
+  margin: 0 0 8px;
+  font-size: 1.05em;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.sponsors .logos {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: space-evenly;   /* reparte el espacio entre logos */
+  gap: 36px;                       /* más aire entre logos */
+  padding: 8px 24px;               /* evita que queden pegados al borde */
+  align-items: center;
+  min-height: 70px;   /* más alto para logos grandes */
+  text-align: center;
+}
+
+/* Tamaños por categoría */
+.sponsors .tier-diamond img   { max-height: 100px; width: auto; }
+.sponsors .tier-platinum img  { max-height: 95px;  width: auto; }
+.sponsors .tier-gold img      { max-height: 90px;  width: auto; }
+.sponsors .tier-silver img    { max-height: 70px;  width: auto; }
+
+.sponsors .logo img {
+  display: block;
+  height: auto;
+  filter: none;
+}
+
+/* Responsive */
+@media (max-width: 560px) {
+  .sponsors .logos { grid-auto-flow: row; gap: 12px; }
+  .sponsors .tier-diamond img  { max-height: 80px; }
+  .sponsors .tier-platinum img { max-height: 65px; }
+  .sponsors .tier-gold img     { max-height: 55px; }
+  .sponsors .tier-silver img   { max-height: 48px; }
+}
+
+/* Ocultar categorías sin logos */
+.sponsors .tier:has(.logos:empty) { display: none; }
+
+/* Cursos con abstracts plegables */
+.lecturers { list-style: none; padding-left: 0; }
+.lecturers li { margin: 0 0 0.6em 0; }
+
+.course {
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 0;               /* el padding va en summary y abstract */
+}
+
+
+
+.course[open] { box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+
+.course summary {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  padding: 10px 12px;
+  cursor: pointer;
+  list-style: none;         /* oculta el triángulo nativo en algunos navegadores */
+}
+
+/* Ocultar marcador nativo y poner uno custom */
+.course summary::-webkit-details-marker { display: none; }
+.course summary::before {
+  content: "▸";
+  flex: 0 0 auto;
+  transform: translateY(1px);
+}
+.course[open] summary::before { content: "▾"; }
+
+.course-title {
+  font-weight: 600;
+  color: #2c3e50;           /* consistente con tus h1/h2 */
+}
+
+
+/* Cuerpo del abstract */
+.course .abstract {
+  padding: 10px 12px 12px 34px;  /* sangría para alinear con el caret */
+  border-top: 1px solid #eee;
+  color: #333;
+  line-height: 1.45;
+  text-align: justify;
+}
+
+.course .abstract p { margin: 0.4em 0; }
+
+/* Para sponsors en el móvil */
+@media (max-width: 560px) {
+  /* Hacer que cada fila de logos sea realmente una columna apilada */
+  .sponsors .logos {
+    display: grid;
+    grid-auto-flow: row;          /* apilar */
+    grid-auto-columns: unset;     /* anula el max-content que rompe en iOS */
+    grid-template-columns: 1fr;   /* una columna centrada */
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+  }
+
+  /* Centrado y contención estricta del logo */
+  .sponsors .logo {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .sponsors .logo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Alturas un poco menores en móvil, manteniendo jerarquía */
+  .sponsors .tier-diamond img { max-height: 80px; }
+  .sponsors .tier-gold img    { max-height: 65px; }
+  .sponsors .tier-silver img  { max-height: 50px; }
+}
+
+/* Para el programa en el movil */
+
+@media (max-width: 560px) {
+  .schedule {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .schedule table {
+    /* SIN table-layout: fixed */
+    min-width: 900px;   /* ancho mínimo cómodo para 6 columnas */
+    width: 100%;
+  }
+  .schedule th, .schedule td {
+    padding: 0.3em;
+    font-size: 12px;
+    white-space: normal;
+    word-break: break-word;
+  }
+  .schedule td:first-child,
+  .schedule th:first-child {
+    min-width: 80px;
+    font-size: 11px;
+  }
+
+  /* (Opcional, muy útil): primera columna fija al hacer scroll */
+  .schedule td:first-child,
+  .schedule th:first-child {
+    position: sticky;
+    left: 0;
+    background: #fff;   /* o #f2f2f2 para el th */
+    z-index: 2;
+  }
+  .schedule th:first-child { background: #f2f2f2; z-index: 3; }
+}
+
+/* Alinea contenido del summary: izquierda título + derecha slides */
+.course summary {
+  display: flex;
+  justify-content: space-between;  /* separa izquierda y derecha */
+  align-items: center;
+  flex-wrap: wrap;                 /* permite que baje si se achica */
+  gap: 6px;
+  padding: 10px 12px;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* Bloque izquierdo (titulo, nombre, institución) */
+.course summary .left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+}
+
+/* Bloque derecho (slides) */
+.course summary .right {
+  margin-left: auto;               /* empuja a la derecha */
+  white-space: nowrap;
+}
+
+/* Ajuste del triángulo indicador */
+.course summary::before {
+  content: "▸";
+  margin-right: 6px;
+}
+.course[open] summary::before {
+  content: "▾";
+}
+
+/* Responsive: en móvil, apilar slide abajo */
+@media (max-width: 560px) {
+  .course summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .course summary .right {
+    margin-left: 0;
+  }
+}
+
+/* Logo dentro de una celda del programa */
+.schedule td.logo-cell {
+  background: #fff;  
+  padding: 2px;        
+}
+
+.schedule td.logo-cell img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;             /* ocupa el ancho disponible */
+  height: 100%;            /* se adapta al alto de la celda */
+  object-fit: contain;     /* mantiene proporciones 851x159 */
+  margin: 0 auto;
+}
+
+/* Íconos para los enlaces de slides */
+a.pdf::before,
+a.html::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;   /* ajustá si querés más grande */
+  height: 18px;
+  margin-right: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Icono PDF */
+a.pdf::before {
+  background-image: url("pdf.png");
+}
+
+/* Icono HTML */
+a.html::before {
+  background-image: url("html.png");
+}

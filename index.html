@@ -526,8 +526,11 @@
   <ul class="organisers">
     <li><a href="https://pages.di.unipi.it/bruni/" target="_blank">Roberto Bruni</a> - University of Pisa, Italy</li>
     <li><a href="https://members.loria.fr/ADiazCaro/">Alejandro D&igrave;az-Caro</a> - Inria Nancy, France & Universidad de la República, Uruguay </li>
-    <li><a href="https://pages.di.unipi.it/gadducci/">Fabio Gadducci</a> (chair) - University of Pisa, Italy - <a href="mailto:fabio.gadducci@unipi.it">Contact</a></li>
-    <li><a href="https://www.irif.fr/users/tedeschi/index" target="_blank">Gabriele Tedeschi</a> - Université Paris Cité/CNRS, France</li>
+    <li><a href="https://pages.di.unipi.it/gadducci/">Fabio Gadducci</a> (chair) - University of Pisa, Italy - 
+		<!-- A js script at the bottom of the pages composes user and domain on a click event-->
+		<a href="#" class="secure-email" mail-user="fabio.gadducci" mail-domain="unipi.it">Contact</a></li>
+    <li><a href="https://www.irif.fr/users/tedeschi/index" target="_blank">Gabriele Tedeschi</a> - IRIF, France - 
+		<a href="#" class="secure-email" mail-user="gabriele.tedeschi" mail-domain="irif.fr">Contact</a></li>
   	<li><a href="http://www.monoidal.net/" target="_blank">Beno&icirc;t Valiron</a> - CentraleSup&eacute;lec, France</li>
   </ul>
   </p>
@@ -603,6 +606,20 @@
   <img src="img/EUflag.png" alt="Funded by the European Union">
 </div>
 </main>
+
+<script>
+      document.querySelectorAll('.secure-email').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault(); // Stops the page from jumping
+          
+          const user = this.getAttribute('mail-user');
+          const domain = this.getAttribute('mail-domain');
+          
+          // Opens the user's default email client
+          window.location.href = `mailto:${user}@${domain}`;
+        });
+      });
+</script>
 
 </body>
 </html>

@@ -498,8 +498,9 @@ a.html::before {
 }
 
 /* Aplicar colores a los elementos de la lista de cursos */
-.course.ql { background-color: #b3c7f9; }
-.course.bn { background-color: #a7ddb4; }
-.course.pc { background-color: #eb9f96; }
-.course.qpl { background-color: #ffe0b2; }
-.course.cat { background-color: #e0f0ff; }
+.course.ql { background-color: #8fb8ed; }   /* Soft bright blue */
+.course.bn { background-color: #9bd5a9; }   /* Soft bright mint green */
+.course.pc { background-color: #f29e9d; }   /* Soft bright coral/salmon */
+.course.vqp { background-color: #6dc9b8; }  /* Vibrant soft teal  */
+.course.qpl { background-color: #f8c57b; }  /* Soft warm apricot/gold */
+.course.cat { background-color: #c4a6e6; }  /* Soft bright lavender */

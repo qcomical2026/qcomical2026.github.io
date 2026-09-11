@@ -76,16 +76,17 @@ a:hover {
   margin-top: 1em;
   font-size: 14px;
 }
+
 .schedule tr.row-30 td {
   height: 20px;
 }
 
 .schedule tr.row-60 td {
-	height: 40px;
+  height: 40px;
 }
 
 .schedule tr.row-90 td {
-	height: 60px;
+  height: 60px;
 }
 
 .schedule tr.row-120 td {
@@ -120,56 +121,27 @@ th {
 
 .schedule th:not(:first-child),
 .schedule td:not(:first-child) {
-  width: 20%; /* cinco columnas iguales */
+  width: 20%; 
 }
 
+/* --- New Colors with Original Text Styling --- */
+
 .lunch {
-  background-color: #e6daf0;
+  background-color: #fce5cd; /* Soft Pastel Peach */
   font-style: italic;
 }
 
 .coffee {
-  background-color: #d9ead3;
+  background-color: #d9ead3; /* Original Mint Green */
   font-style: italic;
 }
 
-.qc {
-  background-color: #b3c7f9;
+.courses {
+  background-color: #c9daf8; /* Soft Pastel Blue */
 }
 
-.bn {
-  background-color: #a7ddb4;
-}
-
-.quantum-languages {
-  background-color: #ffe0b2;
-}
-
-.industrial {
-  background-color: #b2ebff;
-  font-style: italic;
-}
-
-.realisability {
-  background-color: #ffcccb;
-}
-
-.quantitative {
-  background-color: #e0f0ff;
-}
-
-.optics {
-  background-color: #d0d9ff;
-}
-
-.tbc {
-  background-color: #fafafa;
-  color: #777;
-  font-style: italic;
-}
-
-.concurrency {
-  background-color: #fff9c4;
+.social {
+  background-color: #e6daf0; /* Original Lavender */
 }
 
 .lecturers li {

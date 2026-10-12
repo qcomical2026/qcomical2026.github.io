@@ -6,6 +6,11 @@
   --color-vqp: #6dc9b8;  /* Vibrant soft teal  */
   --color-qpl: #f8c57b;  /* Soft warm apricot/gold */
   --color-cat: #c4a6e6;  /* Soft bright lavender */
+
+  /* Schedule Event Colors (Fainter & Distinct) */
+  --color-lunch:  #ffb5a7;  /* Cheerful soft coral-pink */
+  --color-coffee: #f3c68f;  /* Warm, cozy creamy amber */
+  --color-social: #b8c0ff;  /* Vibrant soft periwinkle-blue */
 }
 
 
@@ -137,23 +142,24 @@ th {
 
 /* --- New Colors with Original Text Styling --- */
 
-.lunch {
-  background-color: #fce5cd; /* Soft Pastel Peach */
-  font-style: italic;
-}
-
-.coffee {
-  background-color: #d9ead3; /* Original Mint Green */
-  font-style: italic;
-}
-
 .courses {
   background-color: #c9daf8; /* Soft Pastel Blue */
 }
 
-.social {
-  background-color: #e6daf0; /* Original Lavender */
+.lunch {
+  background-color: var(--color-lunch);
+  font-style: italic;
 }
+
+.coffee {
+  background-color: var(--color-coffee);
+  font-style: italic;
+}
+
+.social {
+  background-color: var(--color-social);
+}
+
 
 .lecturers li {
   margin-bottom: 0.4em;
@@ -482,11 +488,19 @@ a.html::before {
   background-image: url("html.png");
 }
 
-/* Aplicar colores a los elementos de la lista de cursos */
+/* Coloring the courses programs */
 .course.ql  { background-color: var(--color-ql); }
 .course.bn  { background-color: var(--color-bn); }
 .course.pc  { background-color: var(--color-pc); }
 .course.vqp { background-color: var(--color-vqp); }
 .course.qpl { background-color: var(--color-qpl); }
 .course.cat { background-color: var(--color-cat); }
+
+/* Coloring the courses schedule */
+.courses.ql  { background-color: var(--color-ql); }
+.courses.bn  { background-color: var(--color-bn); }
+.courses.pc  { background-color: var(--color-pc); }
+.courses.vqp { background-color: var(--color-vqp); }
+.courses.qpl { background-color: var(--color-qpl); }
+.courses.cat { background-color: var(--color-cat); }
 
